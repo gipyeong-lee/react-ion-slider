@@ -9,6 +9,8 @@
 ```bash
 npm install --save react-ion-slider
 ```
+## Reference
+[ion rangeslider](http://ionden.com/a/plugins/ion.rangeSlider/demo.html)
 
 ## Usage
 
