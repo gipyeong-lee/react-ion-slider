@@ -20,7 +20,7 @@ import MyComponent from 'react-ion-slider'
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <IonRangeSlider />
     )
   }
 }
