@@ -6,8 +6,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <IonRangeSlider type={'double'} skin={'flat'} style={{ color: 'white' }} className={'helo'} min={10} max={1000}
-            onFinish={(data)=>{console.log(data)}} />
+        {/* <IonRangeSlider type={'double'} skin={'flat'} style={{ color: 'white' }} className={'helo'} min={10} max={1000}
+            onFinish={(data)=>{console.log(data)}} /> */}
+            <IonRangeSlider />
       </div>
     )
   }

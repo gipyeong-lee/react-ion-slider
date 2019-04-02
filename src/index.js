@@ -9,6 +9,7 @@ class IonRangeSlider extends Component {
     skin: 'flat'
   }
   static propTypes = {
+    /* Basic setup */
     type: PropTypes.string,
     min: PropTypes.number,
     max: PropTypes.number,
@@ -18,50 +19,50 @@ class IonRangeSlider extends Component {
     /* Advanced setup */
     step: PropTypes.number,
     values: PropTypes.array,
-    keyboard: PropTypes.boolean,
+    keyboard: PropTypes.bool,
 
     /* Grid setup */
-    grid: PropTypes.boolean,
-    grid_margin: PropTypes.boolean,
+    grid: PropTypes.bool,
+    grid_margin: PropTypes.bool,
     grid_num: PropTypes.number,
-    grid_snap: PropTypes.boolean,
+    grid_snap: PropTypes.bool,
 
     /* Interval control */
-    drag_interval: PropTypes.boolean,
+    drag_interval: PropTypes.bool,
     min_interval: PropTypes.number,
     max_interval: PropTypes.number,
 
     /* Handles control */
-    from_fixed: PropTypes.boolean,
+    from_fixed: PropTypes.bool,
     from_min: PropTypes.number,
     from_max: PropTypes.number,
-    from_shadow: PropTypes.boolean,
-    to_fixed: PropTypes.boolean,
+    from_shadow: PropTypes.bool,
+    to_fixed: PropTypes.bool,
     to_min: PropTypes.number,
     to_max: PropTypes.number,
-    to_shadow: PropTypes.boolean,
+    to_shadow: PropTypes.bool,
 
     /* UI control */
     skin: PropTypes.string,
-    hide_min_max: PropTypes.boolean,
-    hide_from_to: PropTypes.boolean,
-    force_edges: PropTypes.boolean,
+    hide_min_max: PropTypes.bool,
+    hide_from_to: PropTypes.bool,
+    force_edges: PropTypes.bool,
     extra_classes: PropTypes.string,
-    block: PropTypes.boolean,
+    block: PropTypes.bool,
 
     /* Prettify numbers */
-    prettify_enabled: PropTypes.boolean,
+    prettify_enabled: PropTypes.bool,
     prettify_separator: PropTypes.string,
     prettify: PropTypes.func,
     prefix: PropTypes.string,
     postfix: PropTypes.string,
     max_postfix: PropTypes.string,
-    decorate_both: PropTypes.boolean,
+    decorate_both: PropTypes.bool,
     value_separator: PropTypes.string,
 
     /* Data control */
     input_values_separator: PropTypes.string,
-    disable: PropTypes.boolean,
+    disable: PropTypes.bool,
 
     /* Callbacks */
     scope: PropTypes.object,
