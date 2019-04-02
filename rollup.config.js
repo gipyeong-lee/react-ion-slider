@@ -24,9 +24,11 @@ export default {
   ],
   plugins: [
     external(),
-    postcss({
-      modules: true
-    }),
+    postcss([
+      require('postcss-modules')({
+        generateScopedName: '[name]__[local]',
+      })
+    ]),
     url(),
     svgr(),
     babel({

@@ -57,5 +57,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "ion-rangeslider": "^2.3.0",
+    "rollup-plugin-less": "^1.1.2"
+  }
 }
