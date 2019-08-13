@@ -4,7 +4,7 @@
   "description": "ion-slider react version",
   "author": "gipyeong.lee",
   "license": "MIT",
-  "repository": "gipyeong.lee/react-ion-slider",
+  "repository": "madist/react-ion-slider",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
