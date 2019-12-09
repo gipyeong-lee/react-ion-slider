@@ -17,13 +17,13 @@
 *** for build-url, contributors-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![NPM](https://img.shields.io/npm/v/react-ion-slider.svg)](https://www.npmjs.com/package/react-ion-slider) 
+[![NPM](https://img.shields.io/npm/v/react-ion-slider.svg)](https://www.npmjs.com/package/react-ion-slider)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  
+
   <a href="https://github.com/madist/react-ion-slider"><h3 align="center">react-ion-slider</h3></a>
     <a href="http://ionden.com/a/plugins/ion.rangeSlider/api.html"><strong>Explore the docs »</strong></a>
     <br />
@@ -101,6 +101,13 @@ import { IonRangeSlider } from 'react-ion-slider'
   <IonRangeSlider type={} min={} max={} from={} to={} step={} values={} keyboard={} {...} />
 ```
 
+### 3. Update options manually without componentDidMount
+```js
+<IonRangeSlider ref={r => this.ionSlider = r} />
+
+this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, type: 'double'})
+```
+
 ### Supported Props
 | Option                 | Defaults | Type     | Description                                                                                                                                                              |
 | ---------------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -159,7 +166,10 @@ import { IonRangeSlider } from 'react-ion-slider'
 | onFinish               | null     | function | Callback. Is called than user releases handle.                                                                                                                           |
 | onUpdate               | null     | function | Callback. Is called than slider is modified by external methods update or reset.                                                                                         |
 
-___ 
+### Ref Functions
+| Option            | Defaults | Type        | Description                                                                                                                                                              |
+| ----------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| update            |   null   |   function  |     You can update options manually                                                                                                                                      |
 
 <!-- ROADMAP -->
 ## Roadmap
