@@ -23,18 +23,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-
-  <a href="https://github.com/madist/react-ion-slider"><h3 align="center">react-ion-slider</h3></a>
+  <a href="https://github.com/gipyeong-lee/react-ion-slider"><h3 align="center">react-ion-slider</h3></a>
     <a href="http://ionden.com/a/plugins/ion.rangeSlider/api.html"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html">View Demo</a>
     ·
-    <a href="https://github.com/madist/react-ion-slider/issues">Report Bug</a>
+    <a href="https://github.com/gipyeong-lee/react-ion-slider/issues">Report Bug</a>
     ·
-    <a href="https://github.com/madist/react-ion-slider/issues">Request Feature</a>
-  </p>
-</p>
+  <a href="https://github.com/gipyeong-lee/react-ion-slider/issues">Request Feature</a>
+ </p>
 
 
 
@@ -98,7 +96,7 @@ import { IonRangeSlider } from 'react-ion-slider'
 ### 2. Implement below codes in the react render method.
 
 ```js
-  <IonRangeSlider type={} min={} max={} from={} to={} step={} values={} keyboard={} {...} />
+  <IonRangeSlider type={} min={} max={} from={} to={} step={} values={} keyboard={} />
 ```
 
 ### 3. Update options manually without componentDidMount
@@ -174,7 +172,7 @@ this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, typ
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/madist/react-ion-slider/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/gipyeong-lee/react-ion-slider/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
