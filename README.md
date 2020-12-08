@@ -200,7 +200,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 GiPyeong Lee - [@gipyeong](https://linkedin.com/in/gipyeong-lee-85734396) - ocsoon.jin@gmail.com
 
-Project Link: [https://github.com/madist/react-ion-slider](https://github.com/madist/react-ion-slider)
+Project Link: [https://github.com/gipyeong-lee/react-ion-slider](https://github.com/gipyeong-lee/react-ion-slider)
 
 ## Reference
 [Best Readme Template](https://github.com/othneildrew/Best-README-Template)

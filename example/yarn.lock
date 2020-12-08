@@ -3845,7 +3845,7 @@ invert-kv@^1.0.0:
   resolved "http://10.113.196.235/repository/npm-all/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
   integrity sha1-EEqOSqym09jNFXqO+L+rLXo//bY=
 
-ion-rangeslider@^2.3.0:
+ion-rangeslider@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/ion-rangeslider/-/ion-rangeslider-2.3.1.tgz#92ade52cb56fc30b9162d0483ff02b6f9ed237c2"
   integrity sha512-6V+24FD13/feliI485gnRHZYD9Ev64M5NAFTxnVib516ATHa9PlXQrC+nOiPngouRYTCLPJyokAJEi3e1Umi5g==
@@ -6388,10 +6388,8 @@ react-error-overlay@^4.0.1:
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
 
 "react-ion-slider@link:..":
-  version "1.0.3"
-  dependencies:
-    ion-rangeslider "^2.3.0"
-    rollup-plugin-less "^1.1.2"
+  version "0.0.0"
+  uid ""
 
 react-is@^16.8.1:
   version "16.8.6"
