@@ -27,7 +27,7 @@
     <a href="http://ionden.com/a/plugins/ion.rangeSlider/api.html"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html">View Demo</a>
+    <a href="https://gipyeong-lee.github.io/react-ion-slider/">View Demo</a>
     ·
     <a href="https://github.com/gipyeong-lee/react-ion-slider/issues">Report Bug</a>
     ·

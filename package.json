@@ -1,10 +1,10 @@
 {
   "name": "react-ion-slider",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "ion-slider react version",
   "author": "gipyeong.lee",
   "license": "MIT",
-  "repository": "madist/react-ion-slider",
+  "repository": "gipyeong-lee/react-ion-slider",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
