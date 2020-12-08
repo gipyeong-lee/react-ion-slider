@@ -22,11 +22,12 @@ export default {
       sourcemap: true
     }
   ],
+  external: ['jquery'],
   plugins: [
     external(),
     postcss([
       require('postcss-modules')({
-        generateScopedName: '[name]__[local]',
+        generateScopedName: '[name]__[local]'
       })
     ]),
     url(),
