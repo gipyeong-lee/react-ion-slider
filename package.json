@@ -20,12 +20,12 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "release:patch": "release-it --increment=patch",
-    "release:minor": "release-it --increment=minor"
+    "release:patch": "release-it --increment patch",
+    "release:minor": "release-it --increment minor"
   },
   "peerDependencies": {
     "jquery": "^3.5.1",
-    "prop-types": "^15.5.4",
+    "prop-types": "^15.7.2",
     "react": "^15.0.0 || ^16.0.0 || ^17.0.0",
     "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0"
   },
