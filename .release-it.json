@@ -1,7 +1,8 @@
 {
     "non-interactive": true,
     "npm": {
-        "skipChecks": true
+        "skipChecks": true,
+        "publish":true
     },
     "git": {
         "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
@@ -9,7 +10,8 @@
         "commit": true,
         "tag": true,
         "push": true,
-        "commitMessage": "Release ${name} ${version}"
+        "commitMessage": "Release ${name} ${version}",
+        "commitArgs": []
     },
     "github": {
         "release": true,
