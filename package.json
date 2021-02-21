@@ -1,6 +1,6 @@
 {
   "name": "react-ion-slider",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "ion-slider react version",
   "author": "gipyeong.lee",
   "license": "MIT",
@@ -20,16 +20,18 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "release": "release-it"
+    "release:patch": "release-it --increment patch",
+    "release:minor": "release-it --increment minor"
   },
   "peerDependencies": {
     "jquery": "^3.5.1",
-    "prop-types": "^15.5.4",
+    "prop-types": "^15.7.2",
     "react": "^15.0.0 || ^16.0.0 || ^17.0.0",
     "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0"
   },
   "devDependencies": {
     "@svgr/rollup": "^2.4.1",
+    "auto-changelog": "^2.2.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-plugin-external-helpers": "^6.22.0",

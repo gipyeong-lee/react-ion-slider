@@ -1,0 +1,23 @@
+{
+    "non-interactive": true,
+    "npm": {
+        "skipChecks": true,
+        "publish":true
+    },
+    "git": {
+        "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
+        "commit": true,
+        "tag": true,
+        "push": true,
+        "commitMessage": "Release ${name} ${version}",
+        "commitArgs": []
+    },
+    "github": {
+        "release": true,
+        "releaseName": "Release v${version}",
+        "tokenRef": "GITHUB_TOKEN"
+    },
+    "hooks": {
+        "after:bump": "npx auto-changelog -p"
+    }
+}
