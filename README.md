@@ -42,6 +42,8 @@
   - [1. Before using `react-ion-slider` please import module](#1-before-using-react-ion-slider-please-import-module)
   - [2. Implement below codes in the react render method](#2-implement-below-codes-in-the-react-render-method)
   - [3. Update options manually without componentDidMount](#3-update-options-manually-without-componentdidmount)
+  - [1. Before using `react-ion-slider` please import jquery module in your HEAD](#1-before-using-react-ion-slider-please-import-jquery-module-in-your-head)
+  - [2. Please load using dynamic import](#2-please-load-using-dynamic-import)
   - [Supported Props](#supported-props)
   - [Ref Functions](#ref-functions)
 - [Roadmap](#roadmap)
@@ -64,11 +66,13 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
+
 - npm
 
 ```sh
 npm install npm@latest -g
 ```
+
 - react
 
 ```sh
@@ -83,8 +87,14 @@ npm install --save react react-dom
    npm install --save react-ion-slider
    ```
 
+   ```
+   yarn add react-ion-slider --save
+   ```
+
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+> Normal
 
 ### 1. Before using `react-ion-slider` please import module
 
@@ -104,6 +114,23 @@ import IonRangeSlider from 'react-ion-slider'
 <IonRangeSlider ref={r => this.ionSlider = r} />
 
 this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, type: 'double'})
+```
+
+> Next.js
+### 1. Before using `react-ion-slider` please import jquery module in your HEAD
+
+```js
+<Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossOrigin="anonymous"></script>
+</Head>
+```
+
+### 2. Please load using dynamic import
+
+```js
+const IonRangeSlider = dynamic(() => import('react-ion-slider'),{ssr: false})
 ```
 
 ### Supported Props
