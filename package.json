@@ -62,32 +62,6 @@
   "files": [
     "dist"
   ],
-  "release-it": {
-    "npm": {
-      "skipChecks": true
-    },
-    "github": {
-      "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
-      "requireCleanWorkingDir": true,
-      "requireBranch": "master",
-      "requireUpstream": true,
-      "requireCommits": true,
-      "addUntrackedFiles": false,
-      "commit": true,
-      "commitMessage": "chore: release v${version}",
-      "commitArgs": [],
-      "tag": true,
-      "tagName": null,
-      "tagAnnotation": "Release v${version}",
-      "tagArgs": [],
-      "push": true,
-      "pushArgs": [
-        "--follow-tags"
-      ],
-      "pushRepo": "",
-      "release":true
-    }
-  },
   "dependencies": {
     "ion-rangeslider": "^2.3.1",
     "rollup-plugin-less": "^1.1.2"
