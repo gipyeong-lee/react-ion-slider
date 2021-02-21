@@ -39,11 +39,9 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-  - [1. Before using `react-ion-slider` please import module](#1-before-using-react-ion-slider-please-import-module)
-  - [2. Implement below codes in the react render method](#2-implement-below-codes-in-the-react-render-method)
-  - [3. Update options manually without componentDidMount](#3-update-options-manually-without-componentdidmount)
-  - [1. Before using `react-ion-slider` please import jquery module in your HEAD](#1-before-using-react-ion-slider-please-import-jquery-module-in-your-head)
-  - [2. Please load using dynamic import](#2-please-load-using-dynamic-import)
+  - [Get Started](#get-started)
+    - [Normal](#normal)
+    - [Next.js](#nextjs)
   - [Supported Props](#supported-props)
   - [Ref Functions](#ref-functions)
 - [Roadmap](#roadmap)
@@ -94,21 +92,23 @@ npm install --save react react-dom
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-> Normal
+### Get Started
 
-### 1. Before using `react-ion-slider` please import module
+#### Normal
+
+1. Before using `react-ion-slider` please import module
 
 ```js
 import IonRangeSlider from 'react-ion-slider'
 ```
 
-### 2. Implement below codes in the react render method
+2. Implement below codes in the react render method
 
 ```js
   <IonRangeSlider type={} min={} max={} from={} to={} step={} values={} keyboard={} />
 ```
 
-### 3. Update options manually without componentDidMount
+3. Update options manually without componentDidMount
 
 ```js
 <IonRangeSlider ref={r => this.ionSlider = r} />
@@ -116,8 +116,9 @@ import IonRangeSlider from 'react-ion-slider'
 this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, type: 'double'})
 ```
 
-> Next.js
-### 1. Before using `react-ion-slider` please import jquery module in your HEAD
+#### Next.js
+
+1. Before using `react-ion-slider` please import jquery module in your HEAD
 
 ```js
 <Head>
@@ -127,7 +128,7 @@ this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, typ
 </Head>
 ```
 
-### 2. Please load using dynamic import
+2. Please load using dynamic import
 
 ```js
 const IonRangeSlider = dynamic(() => import('react-ion-slider'),{ssr: false})
