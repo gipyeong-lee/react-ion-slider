@@ -20,7 +20,8 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "release": "release-it"
+    "release:patch": "release-it --increment=patch",
+    "release:minor": "release-it --increment=minor"
   },
   "peerDependencies": {
     "jquery": "^3.5.1",
