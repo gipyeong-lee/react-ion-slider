@@ -18,6 +18,7 @@
         "tokenRef": "GITHUB_TOKEN"
     },
     "hooks": {
-        "after:bump": "npx auto-changelog -p"
+        "after:bump": "npx auto-changelog -p",
+        "after:release": "git checkout develop && git merge master"
     }
 }
