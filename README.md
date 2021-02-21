@@ -5,10 +5,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -34,8 +30,6 @@
   <a href="https://github.com/gipyeong-lee/react-ion-slider/issues">Request Feature</a>
  </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -45,22 +39,21 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-  - [1. Before using `react-ion-slider` please import module.](#1-before-using-react-ion-slider-please-import-module)
-  - [2. Implement below codes in the react render method.](#2-implement-below-codes-in-the-react-render-method)
+  - [1. Before using `react-ion-slider` please import module](#1-before-using-react-ion-slider-please-import-module)
+  - [2. Implement below codes in the react render method](#2-implement-below-codes-in-the-react-render-method)
+  - [3. Update options manually without componentDidMount](#3-update-options-manually-without-componentdidmount)
   - [Supported Props](#supported-props)
+  - [Ref Functions](#ref-functions)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 - [Reference](#reference)
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 Ion-rangeslider react module, this module mapping `ion-rangeslider` properties to props.
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -71,11 +64,13 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+- npm
+
 ```sh
 npm install npm@latest -g
 ```
-* react
+- react
+
 ```sh
 npm install --save react react-dom
 ```
@@ -83,23 +78,28 @@ npm install --save react react-dom
 ### Installation
 
 1. Npm install
+
    ```sh
    npm install --save react-ion-slider
    ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-### 1. Before using `react-ion-slider` please import module.
+
+### 1. Before using `react-ion-slider` please import module
+
 ```js
-import { IonRangeSlider } from 'react-ion-slider'
+import IonRangeSlider from 'react-ion-slider'
 ```
-### 2. Implement below codes in the react render method.
+
+### 2. Implement below codes in the react render method
 
 ```js
   <IonRangeSlider type={} min={} max={} from={} to={} step={} values={} keyboard={} />
 ```
 
 ### 3. Update options manually without componentDidMount
+
 ```js
 <IonRangeSlider ref={r => this.ionSlider = r} />
 
@@ -107,8 +107,9 @@ this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, typ
 ```
 
 ### Supported Props
+
 | Option                 | Defaults | Type     | Description                                                                                                                                                              |
-| ---------------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|------------------------|----------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Basic setup            |          |          |                                                                                                                                                                          |
 | type                   | "single" | string   | Choose slider type, could be single - for one handle, or double for two handles                                                                                          |
 | min                    | 10       | number   | Set slider minimum value                                                                                                                                                 |
@@ -165,15 +166,15 @@ this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, typ
 | onUpdate               | null     | function | Callback. Is called than slider is modified by external methods update or reset.                                                                                         |
 
 ### Ref Functions
-| Option            | Defaults | Type        | Description                                                                                                                                                              |
-| ----------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| update            |   null   |   function  |     You can update options manually                                                                                                                                      |
+
+| Option | Defaults | Type     | Description                     |
+|--------|----------|----------|---------------------------------|
+| update | null     | function | You can update options manually |
 
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/gipyeong-lee/react-ion-slider/issues) for a list of proposed features (and known issues).
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -186,12 +187,10 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
 
 <!-- CONTACT -->
 ## Contact
@@ -201,4 +200,5 @@ GiPyeong Lee - [@gipyeong](https://linkedin.com/in/gipyeong-lee-85734396) - gipy
 Project Link: [https://github.com/gipyeong-lee/react-ion-slider](https://github.com/gipyeong-lee/react-ion-slider)
 
 ## Reference
+
 [Best Readme Template](https://github.com/othneildrew/Best-README-Template)
