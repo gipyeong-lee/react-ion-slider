@@ -20,8 +20,8 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "release:patch": "release-it --increment patch",
-    "release:minor": "release-it --increment minor"
+    "release:patch": "dotenv release-it --increment patch",
+    "release:minor": "dotenv release-it --increment minor"
   },
   "peerDependencies": {
     "jquery": "^3.5.1",
@@ -39,6 +39,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.1.4",
+    "dotenv-cli": "^4.0.0",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
