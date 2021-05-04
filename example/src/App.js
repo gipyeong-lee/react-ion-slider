@@ -1,12 +1,13 @@
 import React, {Component, Fragment} from 'react'
-
+import './assets/example.css'
 import IonRangeSlider from 'react-ion-slider'
 
 export default class App extends Component {
   state = {
     skin: 'flat',
     min: 10,
-    max: 100
+    max: 100,
+    disable: false
   }
   onClickRerender = () => {
     console.log('onClick!!')
@@ -15,16 +16,20 @@ export default class App extends Component {
       this.ionSlider.update({skin: 'flat', min: 100, max: 500, from: 120, to: 240, type: 'double'})
     })
   }
+  onClickDisable = () => {
+    this.setState(Object.assign({}, this.state, {disable: !this.state.disable}))
+  }
 
   render() {
     return (
       <Fragment>
-        <div onClick={this.onClickRerender}>Re Render</div>
+        <div className={'optionSection'}>
+          <div className={'optionButton'} onClick={this.onClickRerender}>Re Render</div>
+          <div className={'optionButton'} onClick={this.onClickDisable}>Disable</div>
+        </div>
         <div style={{paddingLeft: '20px', width: '100px'}}>
-          {/* <IonRangeSlider type={'double'} skin={'flat'} style={{ color: 'white' }} className={'helo'} min={10} max={1000}
-            onFinish={(data)=>{console.log(data)}} /> */}
           <IonRangeSlider ref={r => this.ionSlider = r} skin={this.state.skin} min={this.state.min}
-                          max={this.state.max} />
+            max={this.state.max} disable={this.state.disable} />
         </div>
       </Fragment>
     )

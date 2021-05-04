@@ -1,9 +1,9 @@
-import React, {PureComponent} from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import 'ion-rangeslider/css/ion.rangeSlider.min.css'
 import 'ion-rangeslider'
 
-class IonRangeSlider extends PureComponent {
+class IonRangeSlider extends Component {
   static defaultProps = {
     type: 'single',
     skin: 'flat'
@@ -83,6 +83,14 @@ class IonRangeSlider extends PureComponent {
 
     $(this.ref).ionRangeSlider(options)
     this.ionSliderRange = $(this.ref).data('ionRangeSlider')
+  }
+
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    if (this.props !== nextProps) {
+      this.ionSliderRange.update({...this.props, ...nextProps})
+      return true
+    }
+    return false
   }
 
   update = (_options) => {
