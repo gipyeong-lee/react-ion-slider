@@ -27,7 +27,8 @@ export default {
     external(),
     postcss([
       require('postcss-modules')({
-        generateScopedName: '[name]__[local]'
+        // generateScopedName: '[name]__[local]' // resolve issue #8
+        generateScopedName: '[name]'
       })
     ]),
     url(),
